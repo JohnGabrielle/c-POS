@@ -1,0 +1,218 @@
+//Point of Sale System
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <conio.h>
+#include <string.h>
+#include <windows.h>
+#include <time.h>
+
+void loading();
+void menu();
+void proceed();
+
+int variant;
+int code, qty;
+float price;
+char anotherOrder;
+char productName[20];
+
+void loading(){
+
+    int Loading_dot, a;
+    int d = 250;
+
+    printf("\n\n\n\n\n\n\n\n\n\t\t\t\tloading");
+
+    for(Loading_dot = 0; Loading_dot < 6; Loading_dot++){
+
+        a = Loading_dot;
+        printf(".");
+        Sleep(d);
+    }
+
+    printf("\n\n\n\t\t\t\tTHANKYOU FOR WAITING!");
+    for(Loading_dot= 0; Loading_dot < 6; Loading_dot++){
+
+        a = Loading_dot;
+        Sleep(100);
+    }
+
+    system("cls");
+    printf("\n\t\t ================================================");
+    printf("\n\t\t ====================PUFF STUFF.CO===============");
+    printf("\n\t\t ================================================");
+    printf("\n\t\t ========    ====  ==  ===      ===       =======");
+    printf("\n\t\t ========  =  ===  ==  ===  =======  ============");
+    printf("\n\t\t ========    ====  ==  ===     ====      ========");
+    printf("\n\t\t ========  ======  ==  ===  =======  ============");
+    printf("\n\t\t ========  =======    ====  =======  ============");
+    printf("\n\t\t ================================================");
+    printf("\n\t\t ================================================");
+    printf("\n\t\t ================================================");
+    printf("\n\t\t ================================================");
+    printf("\n\t\t ================================================");
+    printf("\n\t\t ================================================");
+    printf("\n\t\t =Created by Under Coder | Gab | Other not mine =");
+    printf("\n\t\t ================================================");
+
+    menu();
+}
+
+void menu(){
+    printf("\n\t\t\t=======================================\n");
+    printf("\t\t\tEnter [1] to proceed");
+    printf("\n\t\t\t\tEnter [0] to Exit");
+    printf("\n\t\t\t=======================================\n");
+
+    int enter;
+    printf("\n\n\t\t\t\tPlease enter mode: ");
+    scanf("%d", &enter);
+
+    switch (enter){
+        case 1:
+        proceed();
+    }
+}
+
+void proceed(){
+    do{
+       system("cls");
+       printf("\t\t===========================Puff Stuff.Co=============================");
+       printf("\t\t========================Disposable Pod/Vape==========================");
+       printf("\t\t [code]                            [prize]");
+       printf("\t\t= [1] Enjoy alladin v1               450  ");
+       printf("\t\t= [2] Enjoy alladin v2               550  ");
+       printf("\t\t= [3] Geekbar 6kpuff                 370  ");
+       printf("\t\t= [4] Oxbar 9.5kpuf fs               500  ");
+       printf("\t\t= [5] Imvp 8kpuffs                   370  ");
+       printf("\t\t= [6] Flava 8.5kpuffs                420  ");
+       printf("\t\t= [7] Flava 7kpuffs                  380  ");
+       printf("\t\t= [8] top fog 12kpuffs               550  ");
+       printf("\t\t= [9] Toha 6kpuffs                   350  ");
+       printf("\t\t= [10] Toha 5kpuffs                  300  ");
+       printf("\t\t==============================Ejuice=================================");
+       printf("\t\t[code]                                    [ml]                [prize]");
+       printf("\t\t= [1] Flavairy milk cereal 6mg            60ml                  150  ");
+       printf("\t\t= [2] Vapers Tongue mocha soya 12mg       60ml                  200  ");
+       printf("\t\t= [3] Katas Vanilla custard 12mg          100ml                 200  ");
+       printf("\t\t= [4] Dead wood cheesecake ry4 12mg       60ml                  150  ");
+       printf("\t\t= [5] havoc avocado 12mg                  100ml                 220  ");
+
+       printf("\n\t\tSelect variant [1] Disposable Pod/vape [2] Ejuice");
+       printf("\n\t\tEnter Number: ");
+       scanf("%d",&variant);
+
+       switch(code){
+           case 1:("\n\t\tChoose prize");
+           printf("\n\t\tChoose prize");
+           printf("\n\t\tEnter Number: ");
+           scanf("%d", &variant);
+
+             switch (code)
+             {
+                case 1:
+                    productName[1];
+                    price = 450.00;
+                    break;
+                case 2:
+                    price = 550.00;
+                    break;
+                case 3:
+                    price = 370.00;
+                    break;
+                case 4:
+                    price = 370.00;
+                    break;
+                case 5:
+                    price = 370.00;
+                    break;
+                case 6:
+                    price = 420.00;
+                    break;
+                case 7:
+                    price = 380.00;
+                    break;
+                case 8:
+                    price = 550.00;
+                    break;
+                case 9:
+                    price = 350.00;
+                    break;
+                case 10:
+                    price = 300.00;
+                    break;
+
+                default:
+                    printf("\n\t\tYou entered invalid option.");
+                    break;("\n\t\tYou entered invalid option.");
+                    break;
+
+                break;
+
+             }
+            break;
+
+                case 2:
+                printf("\n\t\tYOU SELECTED DISPOSABLE POD/VAPE.....");
+                printf("\n\t\tCHOOOSE SELECTED DISPOSABLE POD/VAPE.....");
+                printf("\n\t\tEntered Code Disposable");
+                scanf("%d",&variant);
+
+                {
+                    switch (code)
+                    {
+                    case 1:
+                        price = 150.00;
+                        break;
+
+                    case 2:
+                        price = 200.00;
+                        break;
+
+                    case 3:
+                        price = 200.00;
+                        break;
+
+                    case 4:
+                        price = 150.00;
+                        break;
+
+                    case 5:
+                        price = 220.00;
+                        break;
+
+                    default:
+                        printf("\n\t\tYou entered invalid option.");
+                        break;
+
+                    }
+                    break;
+                }
+                break;
+        }
+
+        printf("\n\t\tFlavor selected is %s",productName);
+        printf("\n\t\tQuantity:");
+        scanf("%i", &qty);
+
+        float Total_Amount = price * qty;
+        printf("\n\t\tTotal Amount: %d",Total_Amount);
+
+        float Total_Balance = Total_Balance+Total_Amount;
+        printf("\n\t\tTotal_Balance: %d",Total_Balance);
+
+        printf("\n\n\t\tWant to add another order? Press [Y] or [X]");
+        anotherOrder = getch();
+
+     } while (anotherOrder == 'y' || anotherOrder == 'Y' );
+
+     system("cls");
+     printf("\n\t\t=========================>>>>>RECEIPT<<<<<=================================");
+
+}
+
+
+int main(){
+    loading();
+}
